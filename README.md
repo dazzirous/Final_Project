@@ -32,3 +32,6 @@ The goal of this project is to create an AI-powered Q&A system that answers ques
 2. **Q&A Model:** Utilize the pre-trained DistilBERT model fine-tuned on SQuAD to answer questions based on the retrieved content.
 3. **User Interface:** Develop a simple user interface using Gradio to allow users to interact with the model.
 4. **Integration:** Integrate all components and perform testing to ensure accuracy and usability.
+
+### **Challenges** 
+The model can be a little dumb when asking it easy questions. But it is capable of reframing its answer if you give it direction.
