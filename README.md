@@ -36,3 +36,4 @@ The goal of this project is to create an AI-powered Q&A system that answers ques
 ### **Challenges** 
 The model can be a little dumb when asking it easy questions. But it is capable of reframing its answer if you give it direction.
 Broke the model when accepting a pull request. I wasnt able to access it anymore and was getting errors when I tried to interact with any requests in git. So I scraped it and added new code that looked better and had more focused functionality.
+Not only that but changing the code somehow broke brians code that was working fine before. Now we have to go back and figure out why that isnt working as well.
