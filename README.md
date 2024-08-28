@@ -133,5 +133,3 @@ To use the application:
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
 ---
-
-This version replaces the "Installation" section with the "Dependencies" section, making it more aligned with the dependencies required for your project.
