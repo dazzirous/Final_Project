@@ -39,3 +39,107 @@ Broke the model when accepting a pull request. I wasnt able to access it anymore
 Not only that but changing the code somehow broke brians code that was working fine before. Now we have to go back and figure out why that isnt working as well.
 
 Asked the chat bot consecutive questions, it worked.
+
+Here's a README file for your Python project:
+
+---
+
+Here's the updated README file with the revised section:
+
+---
+
+# Wikipedia Article QA and Sentiment Analysis
+
+This project retrieves Wikipedia articles from a specified category, applies question-answering using a BERT model, and performs sentiment analysis on the answers. The project is designed to showcase basic NLP techniques using Python, Hugging Face Transformers, and Gradio for building a simple user interface.
+
+## Table of Contents
+
+- [Dependencies](#dependencies)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Features](#features)
+- [Future Improvements](#future-improvements)
+- [License](#license)
+
+## Dependencies
+
+To run this project, you will need the following Python libraries:
+
+- `requests`: For making HTTP requests to the Wikipedia API.
+- `pandas`: For handling and manipulating tabular data.
+- `nltk`: For natural language processing tasks such as tokenization and stopword removal.
+- `transformers`: For using pre-trained models like BERT for question-answering.
+- `gradio`: For creating a user-friendly web interface.
+
+Ensure that you have Python 3.7 or later installed. You can install the required dependencies using pip:
+
+```bash
+pip install requests pandas nltk transformers gradio
+```
+
+Additionally, you need to download some NLTK resources:
+
+```python
+import nltk
+nltk.download('punkt')
+nltk.download('stopwords')
+```
+
+## Usage
+
+To use the application:
+
+1. **Retrieve Wikipedia Articles:**
+   The script retrieves articles from a specified Wikipedia category. You can specify the category by setting the `category_name` variable.
+
+   Example:
+   ```python
+   category_name = "American Revolution"
+   df_articles = get_articles_from_category(category_name)
+   ```
+
+   This will return a pandas DataFrame containing the titles, descriptions, and content of articles in the specified category.
+
+2. **Question-Answering and Sentiment Analysis:**
+   The application uses a pre-trained BERT model to answer questions based on the summaries of the articles. It also analyzes the sentiment of the answers using the VADER sentiment analyzer.
+
+   Example:
+   ```python
+   question = "What was the main cause of the American Revolution?"
+   answer, analysis = get_answer_and_sentiment(question)
+   print("Answer:", answer)
+   print("Sentiment Analysis:", analysis)
+   ```
+
+3. **Run the Gradio Interface:**
+   You can interact with the model through a web interface powered by Gradio.
+   ```python
+   interface.launch()
+   ```
+
+## Project Structure
+
+- `get_articles_from_category()`: A function that retrieves articles from a specified Wikipedia category and returns them in a pandas DataFrame.
+- `get_answer_and_sentiment()`: A function that answers a question based on article summaries and analyzes the sentiment of the answer.
+- Gradio Interface: A simple user interface for interacting with the model.
+
+## Features
+
+- **Article Retrieval:** Fetches articles from a specified Wikipedia category.
+- **Question-Answering:** Uses BERT to answer questions based on article content.
+- **Sentiment Analysis:** Analyzes the sentiment of the answers using VADER.
+- **Web Interface:** A Gradio-powered interface for easy interaction.
+
+## Future Improvements
+
+- Improve the accuracy and speed of the question-answering model.
+- Enhance the user interface with more options and better styling.
+- Add support for more languages and Wikipedia categories.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for more details.
+
+---
+
+This version replaces the "Installation" section with the "Dependencies" section, making it more aligned with the dependencies required for your project.
