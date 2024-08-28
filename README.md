@@ -34,19 +34,11 @@ The goal of this project is to create an AI-powered Q&A system that answers ques
 4. **Integration:** Integrate all components and perform testing to ensure accuracy and usability.
 
 ### **Challenges** 
-The model can be a little dumb when asking it easy questions. But it is capable of reframing its answer if you give it direction.
-Broke the model when accepting a pull request. I wasnt able to access it anymore and was getting errors when I tried to interact with any requests in git. So I scraped it and added new code that looked better and had more focused functionality.
-Not only that but changing the code somehow broke brians code that was working fine before. Now we have to go back and figure out why that isnt working as well.
+One of the key challenges we faced was that the model sometimes struggled with answering straightforward questions, often requiring additional guidance to reframe its responses effectively. This highlighted the model's limitations in handling simple queries without explicit direction.
 
-Asked the chat bot consecutive questions, it worked.
+Another significant issue occurred when we accepted a pull request that inadvertently broke the model. Following this, I could no longer access the model and encountered errors whenever I attempted to interact with any requests in Git. As a result, I had to scrap the existing code and replace it with new code that not only improved functionality but also focused on more specific tasks. However, this change had unintended consequences: it disrupted Brian's code, which had been working fine prior to the update. This setback requires us to revisit and debug the affected parts to restore their functionality.
 
-Here's a README file for your Python project:
-
----
-
-Here's the updated README file with the revised section:
-
----
+Despite these challenges, we did observe that the chatbot performed well when asked consecutive questions, demonstrating its ability to handle sequential interactions effectively.
 
 # Wikipedia Article QA and Sentiment Analysis
 
